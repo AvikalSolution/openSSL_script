@@ -11,6 +11,6 @@ Permission
 sudo chmod u+x ./create_cert_chain.sh
 #sudo chmod u+x ./sign_verify.sh
 
-# openSSL_script
+# SFTP script
 connection.config : file to set credentials and base location
 folder.config: List of folder/sub-folder that need to be created, starting from base location
