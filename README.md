@@ -10,3 +10,7 @@ This repository provides the bash script to generate self signed root certificat
 Permission 
 sudo chmod u+x ./create_cert_chain.sh
 #sudo chmod u+x ./sign_verify.sh
+
+# openSSL_script
+connection.config : file to set credentials and base location
+folder.config: List of folder/sub-folder that need to be created, starting from base location
