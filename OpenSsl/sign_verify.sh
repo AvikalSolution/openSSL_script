@@ -16,8 +16,8 @@ openssl dgst -sha256 -verify public.key -signature data.txt.sig data.txt
 
 #sudo chmod u+x ./sign_verify.sh
 #---for pkcs#7-----
-#p7b to pem
-openssl pkcs7 -inform der -print_certs -in cad.p7b -out certificate.pem
-#chain verification + signature verification
-openssl smime -verify -inform der -in file1.txt.sig -content file1.txt -certfile leaf.pem -CAfile certificate.pem
-# choose the -noverify to ignore chain verification
+##p7b to pem
+#openssl pkcs7 -inform der -print_certs -in cad.p7b -out certificate.pem
+##chain verification + signature verification
+#openssl smime -verify -inform der -in file1.txt.sig -content file1.txt -certfile leaf.pem -CAfile certificate.pem
+##choose the -noverify to ignore chain verification
